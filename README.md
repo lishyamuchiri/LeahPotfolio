@@ -104,7 +104,7 @@ Make sure you have the following installed:
 
 ## **Deployment**
 
-The project is live and accessible online. Check it out here: [Live Demo](https://your-portfolio-link.com)
+Check it out here: [Live Demo](https://github.com/lishyamuchiri/LeahPotfolio)
 
 ---
 
