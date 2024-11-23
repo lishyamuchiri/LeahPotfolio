@@ -104,7 +104,7 @@ Make sure you have the following installed:
 
 ## **Deployment**
 
-Check it out here: [Live Demo](https://github.com/lishyamuchiri/LeahPotfolio)
+Check it out here: [Live Demo](https://lishyamuchiri.github.io/LeahPotfolio/)
 
 ---
 
