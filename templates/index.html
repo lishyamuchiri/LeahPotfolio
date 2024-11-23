@@ -1,0 +1,167 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+
+<style>
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.hero {
+  background-color: #090a0c;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero__title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 1;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #003298;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in backwards infinite;
+          animation: cube 10s ease-in backwards infinite;
+
+}
+
+.cube:nth-child(2n) {
+  border-color: #010202;
+}
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 1s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 2s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 3s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 4s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 5s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+
+  <!-- Hero Section -->
+    <section id="hero" class="hero section grey-background " style="backdrop-filter: blur(15px);>
+
+    <div class="d-flex">
+    <div id="img2" class="align-items-end">
+        <img src="{% static 'assets/lap8.jpg' %}" alt="">
+    </div>
+</div>
+
+
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h2 style="margin-left: 40px">Leah  <span class="text-primary"> Muchiri</span></h2>
+        <p style="margin-left: 40px">I'm <span class="typed" data-typed-items=" full-stack web developer">And graphic designer too</span><span class="typed-cursor typed-cursor--blink"></span></p>
+          <br><br>
+          <h1></h1>
+          <p  class="py-3" style="font-size: 20px;margin-left: 40px ; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);"> Here’s a brief introduction about me  and my work </p>
+          <p   class="py-3" style="font-size: 20px; margin-left: 40px"> Explore my projects to learn more!  <span><a href="{% url 'contact' %}" class="btn btn-success p-1 h-15 btn-outline-black text-white" style="margin-left: 40px">Reach Out!</a> </span></p>
+
+
+
+
+
+   <a href="{% static 'CV.pdf' %}" download="Leah_Muchiri_CV.pdf" class="btn btn-success h-15 p-1 " style="margin-left: 40px"> Download Cv</a>
+
+
+
+    <div class="social-links mt-4">
+        <a href="https://github.com/lishyamuchiri" class="btn btn-outline-success me-2"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/0795121721" class="btn btn-outline-success me-2"><i class="bi bi-whatsapp"></i></a>
+        <a href="linkedin.com/in/lishya-muchiri-849b91268" class="btn btn-outline-success"><i class="bi bi-linkedin"></i></a>
+        <a href=" https://www.facebook.com/share/Cata9W3QGJE9qimY/" class="btn btn-outline-success me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="btn btn-outline-success me-2"><i class="bi bi-instagram"></i></a>
+
+    </div>
+          </div>
+
+
+    <div class="hero">
+  <div class="hero__title"></div>
+        <br><br>
+
+<img src="{% static 'assets/me.png' %}" alt="Profile Image" class="img-fluid rounded-circle shadow-sm hover-shadow " style="width: 400px; height: 400px;margin-top: 100px;">
+
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+</div>
+
+
+    </section><!-- /Hero Section -->
+
+
+
+
+
+{% endblock %}
