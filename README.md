@@ -39,7 +39,7 @@ This portfolio website serves as a personal platform to showcase my skills, proj
 - **Django**: Backend framework for functionality and structure.
 - **SQLite**: Lightweight database for development.
 - **Font Awesome**: Icons for social media links.
-- **Deployment**: Deployed using [GitHub Pages/Netlify/Other].
+- **Deployment**: Deployed using [GitHub Pages].
 
 ---
 
@@ -59,13 +59,13 @@ Make sure you have the following installed:
 1. **Clone the Repository**  
    Clone the project from GitHub:
    ```bash
-   git clone https://github.com/username/django-portfolio.git
+   git clone https://github.com/lishyamuchiri/LeahPotfolio.git
    ```
-   Replace `username/django-portfolio` with your actual repository link.
+   
 
 2. **Navigate to the Project Directory**  
    ```bash
-   cd django-portfolio
+   cd https://github.com/lishyamuchiri?tab=repositories
    ```
 
 3. **Create a Virtual Environment** (optional but recommended)  
@@ -121,7 +121,7 @@ The project is live and accessible online. Check it out here: [Live Demo](https:
 Feel free to reach out for collaboration or inquiries:  
 - **Email**: [lishyamuchiri@gmail.com.com](mailto:your-email@example.com)  
 - **LinkedIn**: [linkedin.com/in/leah-muchiri](https://linkedin.com/in/leah-muchiri)  
-- **Portfolio**: [your-portfolio-link.com](https://your-portfolio-link.com)
+- **Portfolio**: [https://github.com/lishyamuchiri?tab=repositories](https://your-portfolio-link.com)
 
 ---
 
